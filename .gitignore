@@ -1,0 +1,45 @@
+# 🔹 Global ignores
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.bak
+*.old
+*.tmp
+
+### 🔹 nmap-scanner-frontend (React) ###
+nmap-scanner-frontend/node_modules/
+nmap-scanner-frontend/build/
+nmap-scanner-frontend/dist/
+nmap-scanner-frontend/.npm/
+nmap-scanner-frontend/.yarn/
+nmap-scanner-frontend/.env
+nmap-scanner-frontend/.env.local
+nmap-scanner-frontend/.env.development
+nmap-scanner-frontend/.env.production
+nmap-scanner-frontend/.env.test
+nmap-scanner-frontend/package-lock.json
+nmap-scanner-frontend/yarn.lock
+
+### 🔹 BACKEND (Python Flask) ###
+backend/venv/
+backend/env/
+backend/__pycache__/
+backend/instance/
+backend/.env
+backend/.flaskenv
+backend/*.sqlite3
+backend/*.db
+backend/logs/
+backend/*.log
+backend/.pytest_cache/
+
+# 🔹 Ignore test coverage reports
+coverage/
+.nyc_output/
+*.lcov
+
+# 🔹 Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd

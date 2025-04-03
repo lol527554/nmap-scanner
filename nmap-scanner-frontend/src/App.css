@@ -1,0 +1,217 @@
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scanner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.scan-controls {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.results-history {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.scan-results {
+  flex: 2;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.scan-history {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.scan-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scan-history li {
+  margin-bottom: 0.5rem;
+}
+
+.scan-history button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  color: #2c3e50;
+  border: 1px solid #ecf0f1;
+  padding: 0.6rem;
+  font-weight: normal;
+}
+
+.scan-history button:hover {
+  background: #f8f9fa;
+}
+
+.results-container {
+  text-align: left;
+}
+
+.scan-meta, .ports-section, .os-section, .stats-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.ports-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ports-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.port-scripts {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.script-output {
+  margin: 0.3rem 0;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #fdecea;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.progress-container {
+  margin: 1rem 0;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #ecf0f1;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #3498db;
+  transition: width 0.5s ease;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.scan-progress {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.scan-progress h4 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .results-history {
+    flex-direction: column;
+  }
+  
+  .scanner-container {
+    padding: 0 1rem;
+  }
+}
