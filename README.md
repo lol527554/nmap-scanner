@@ -23,14 +23,8 @@ cd network-scanner
 1. Navigate to the `backend/` folder: cd backend
 2. Create a **virtual environment** to manage dependencies: python -m venv venv
 3. Activate the virtual environment:
-- **For macOS/Linux**:
-  ```
-  source venv/bin/activate
-  ```
-- **For Windows**:
-  ```
-  venv\Scripts\activate
-  ```
+- **For macOS/Linux**: source venv/bin/activate
+- **For Windows**: venv\Scripts\activate
 4. Install the required dependencies: pip install -r requirements.txt
 5. Start the Flask server: python app.py
 
@@ -43,7 +37,3 @@ cd network-scanner
 
 2. Install frontend dependencies: npm install
 3. Start the React application: npm start
-
-
-
-
